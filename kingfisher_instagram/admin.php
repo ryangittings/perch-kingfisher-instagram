@@ -13,8 +13,6 @@
         return false;
     });
 
-    // Fieldtypes
-    include_once(__DIR__.'/fieldtypes.php');
     require 'vendor/autoload.php';
 
     PerchSystem::register_shortcode_provider('KingfisherInstagram_ShortcodeProvider');

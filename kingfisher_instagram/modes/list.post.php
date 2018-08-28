@@ -7,7 +7,7 @@
     if($details['settingInstagramToken'] && $details['settingInstagramToken']!='') {
         $form_button = [
                 'action' => $Form->action(),
-                'button' => $Form->hidden('settingInstagramID', $details['settingInstagramID']).$Form->submit('btnSubmit', 'Get posts', 'button button-icon icon-left', true, true, PerchUI::icon('ext/o-cloud-download', 14))
+                'button' => $Form->hidden('settingInstagramToken', $details['settingInstagramToken']).$Form->submit('btnSubmit', 'Get posts', 'button button-icon icon-left', true, true, PerchUI::icon('ext/o-cloud-download', 14))
             ];
     }
 

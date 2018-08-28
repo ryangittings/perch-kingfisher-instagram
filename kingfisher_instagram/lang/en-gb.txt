@@ -28,5 +28,15 @@
     "Next": "Next",
     "Last page": "Last page",
     "Last": "Last",
-    "Caption": "Caption"
+    "Caption": "Caption",
+    "First you need to generate an access token using Pixel Unions access token generator or by creating an Instagram application: <a href=\"%s\">here<\/a>": "First you need to generate an access token using Pixel Unions access token generator or by creating an Instagram application: <a href=\"%s\">here<\/a>",
+    "Configuring Instagram": "Configuring Instagram",
+    "Instagram Settings": "Instagram Settings",
+    "Instagram token": "Instagram token",
+    "Check for updates": "Check for updates",
+    "Force reauthentication": "Force reauthentication",
+    "Save": "Save",
+    "or": "or",
+    "Cancel": "Cancel",
+    "Settings updated.": "Settings updated."
 }

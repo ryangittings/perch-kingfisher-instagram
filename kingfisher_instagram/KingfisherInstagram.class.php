@@ -24,14 +24,15 @@ class KingfisherInstagram
 
     if (PerchUtil::count($posts)) {
 			foreach($posts as $post) {
-			    //loop through all retrieved Tweets
-			    
+          //loop through all retrieved Tweets
+          
 				if(!in_array($post->id,$a)) {
             $data = array();
 				    $data['postInstagramID']    = $post->id;
 				    $data['postImageStandard'] = $post->images->standard_resolution->url;
             $data['postImageThumbnail'] = $post->images->thumbnail->url;
 				    $data['postImageLow'] = $post->images->low_resolution->url;
+            $data['postLink'] = $post->link;
 				    $data['caption'] = $post->caption->text;
             $data['likes'] = $post->likes->count;
             $data['postDate'] = date('Y-m-d H:i:s', $post->created_time);;

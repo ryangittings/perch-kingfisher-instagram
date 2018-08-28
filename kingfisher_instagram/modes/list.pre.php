@@ -36,16 +36,7 @@
         $postvars    = array('settingInstagramID');
     	$data        = $Form->receive($postvars);
     	$Instagram     = new KingfisherInstagram();	
-        	
-        //update posts
-        $twitter_id_str = $data['settingInstagramID'];
-		$twitter_id_array = explode(',',$twitter_id_str);
-			
-		for($i=0; $i<PerchUtil::count($twitter_id_array); $i++) {	
-	    	$twitter_id = trim($twitter_id_array[$i]);        	
-	        $Instagram->get_posts('favorites', $twitter_id);
-		    $Instagram->get_posts('mine', $twitter_id);        
-		}
+      $Instagram->get_posts();        
 		
 		$message = $HTML->success_message('Posts updated.');  
     

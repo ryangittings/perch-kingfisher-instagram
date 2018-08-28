@@ -10,6 +10,7 @@
       `postImageStandard` varchar(255) NOT NULL DEFAULT '',
       `postImageThumbnail` varchar(255) NOT NULL DEFAULT '',
       `postImageLow` varchar(255) NOT NULL DEFAULT '',
+      `postLink` varchar(255) NOT NULL DEFAULT '',
       `caption` varchar(255) NOT NULL DEFAULT '',
       `likes` varchar(255) NOT NULL DEFAULT '',
       `postDate` datetime DEFAULT NULL,
