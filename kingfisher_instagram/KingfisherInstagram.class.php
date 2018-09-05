@@ -20,8 +20,6 @@ class KingfisherInstagram
 
     if (PerchUtil::count($posts["data"])) {
 			foreach($posts["data"] as $post) {
-          //loop through all retrieved Tweets
-          
 				if(!in_array($post["id"],$a)) {
             $data = array();
 				    $data['postInstagramID']    = $post["id"];

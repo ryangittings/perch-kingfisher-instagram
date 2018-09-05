@@ -16,7 +16,7 @@
 
 	/**
 	 * 
-	 * function called by scripts (eg:a cron job or scheduled task) to upate the Tweets.
+	 * function called by scripts (eg:a cron job or scheduled task) to update the posts.
 	 */
 	function kingfisher_instagram_update_posts()
 	{
