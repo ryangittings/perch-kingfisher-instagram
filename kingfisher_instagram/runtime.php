@@ -1,5 +1,4 @@
 <?php
-  require 'vendor/autoload.php';
   
 	spl_autoload_register(function($class_name){
         if (strpos($class_name, 'KingfisherInstagram')===0) {
@@ -46,7 +45,7 @@
 		$type		= 'mine';
 
 		$defaults = array(
-      'count'=>3,
+      'count'=>16,
       'template' => 'post.html'
     );
 
@@ -55,7 +54,7 @@
 		$API  	= new PerchAPI(1.0, 'kingfisher_instagram');
 		$Posts = new KingfisherInstagram_Posts($API);
 		
-    $r = $Posts->all();
+    $r = $Posts->get_custom($opts);
     
     $Template = $API->get('Template');
     $Template->set('instagram/'.$opts['template'], 'instagram');

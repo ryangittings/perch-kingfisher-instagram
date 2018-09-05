@@ -13,6 +13,4 @@
         return false;
     });
 
-    require 'vendor/autoload.php';
-
     PerchSystem::register_shortcode_provider('KingfisherInstagram_ShortcodeProvider');
