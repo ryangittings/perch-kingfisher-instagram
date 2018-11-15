@@ -1,7 +1,0 @@
-{
-    "require": {
-        "vinkla/instagram": "dev-master",
-        "php-http/message": "^1.7",
-        "php-http/guzzle6-adapter": "^1.1"
-    }
-}

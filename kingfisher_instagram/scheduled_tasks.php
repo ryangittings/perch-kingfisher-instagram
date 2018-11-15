@@ -22,13 +22,13 @@
 		$count = kingfisher_instagram_update_posts();
 
 		if ($count == 1) {
-			$tweets = 'post';
+			$posts = 'post';
 		}else{
-			$tweets = 'posts';
+			$posts = 'posts';
 		}
 
 		return array(
 				'result'=>'OK',
-				'message'=>$count.' new '.$tweets.' fetched.'
+				'message'=>$count.' new '.$posts.' fetched.'
 			);
 	}

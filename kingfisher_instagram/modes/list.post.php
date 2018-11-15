@@ -38,11 +38,11 @@
         ]);
 
         $Listing->add_col([
-          'title'     => 'Avatar',
+          'title'     => 'Post',
           'value'     => function($item) use ($HTML) {
               return $HTML->build('img[src='.$item->postImageThumbnail().'].avatar');
           },
-          'sort'      => 'tweetUser',
+          'sort'      => 'postInstagramID',
       ]);
 
         $Listing->add_col([

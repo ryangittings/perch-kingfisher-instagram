@@ -1,7 +1,5 @@
 <?php
 
-require '../vendor/autoload.php';
-
   $Form = $API->get('Form');
 
   $InstagramSettings = new KingfisherInstagram_Settings($API);
