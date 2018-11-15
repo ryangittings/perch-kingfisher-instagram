@@ -25,12 +25,10 @@ class KingfisherInstagram_Posts extends PerchAPI_Factory
 
           $limit = $start.$count;
           
-          if ($filter_type=='sql' && $Paging->enabled()) {
-            $sql .= ' '.$Paging->limit_sql();
-          }else{
-              if ($limit && $limit!='') {
-                $sql .= ' LIMIT '.$limit;
-            }
+          $sql .= ' ORDER BY '.$this->default_sort_column.' '.$this->default_sort_direction;
+          
+          if ($limit && $limit!='') {
+            $sql .= ' LIMIT '.$limit;
           }
       }
 
