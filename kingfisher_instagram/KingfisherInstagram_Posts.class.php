@@ -2,11 +2,12 @@
 
 class KingfisherInstagram_Posts extends PerchAPI_Factory
 {
-    protected $table     = 'instagram_posts';
+  protected $table     = 'instagram_posts';
 	protected $pk        = 'postID';
 	protected $singular_classname = 'KingfisherInstagram_Post';
 	
 	protected $default_sort_column = 'postID';
+  protected $default_sort_direction = 'DESC';
     
 	public function get_post_ids()
   {
